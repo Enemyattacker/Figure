@@ -5,24 +5,19 @@ package ru.stetsenko;
  */
 public class Main {
     public static void main(String[] args){
-        Rectangle rectangle = new Rectangle();
-        Rectangle square = new Rectangle();
-        Rectangle emptyRectangle = new Rectangle();
-        Triangle triangle = new Triangle();
-        Triangle rightTriangle = new Triangle();
-        Triangle emptyTriangle = new Triangle();
-        rectangle.squareRectangle(2, 4);
-        square.squareRectangle(4);
-        emptyRectangle.squareRectangle();
-        triangle.squareTriangle(3,6);
-        rightTriangle.squareTriangle(5);
-        emptyTriangle.squareTriangle();
+        Rectangle rectangle = new Rectangle(3,5);
+        Rectangle rightRectangle = new Rectangle (3);
+        Rectangle emptyRectangle = new Rectangle ();
+        Triangle triangle = new Triangle (3,5);
+        Triangle rightTriangle = new Triangle (4);
+        Triangle emptyTriangle = new Triangle ();
         rectangle.output();
-        square.output();
+        rightRectangle.output();
         emptyRectangle.output();
         triangle.output();
         rightTriangle.output();
         emptyTriangle.output();
+
 
 
     }

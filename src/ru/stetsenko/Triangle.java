@@ -4,25 +4,26 @@ package ru.stetsenko;
  * Created by Alesha on 06.10.2015.
  */
 public class Triangle extends Figure {
+
+    public Triangle(double a, double b){
+        this.a=a;
+        this.b=b;
+    }
+
+    public Triangle(double a){
+        this(a, a);
+    }
+
+    public Triangle(){
+        this(1);
+    }
+
     @Override
-    double squareTriangle(double a, double b){
-        area=0.5*(a*b);
-        return area;
+    double square(){
+        return 0.5*(a*b);
     }
-
-    double squareTriangle(double a){
-        area=0.5*(a*a);
-        return area;
-    }
-
-    double squareTriangle(){
-        a=1;
-        b=1;
-        area=0.5*(a*b);
-        return area;
-    }
-
+    @Override
     void output(){
-            System.out.println("Площадь треугольника " + area + " кв. ед");
+            System.out.println("Площадь треугольника " + square() + " кв. ед");
     }
 }

@@ -1,28 +1,30 @@
 package ru.stetsenko;
 
+
 /**
  * Created by Alesha on 06.10.2015.
  */
 public class Rectangle extends Figure {
+
+    public Rectangle(double a, double b){
+        this.a=a;
+        this.b=b;
+    }
+
+    public Rectangle(double a){
+        this(a, a);
+    }
+
+    public Rectangle(){
+        this(1);
+    }
+
     @Override
-    double squareRectangle(double a, double b){
-        area=a*b;
-        return area;
+    double square(){
+        return a*b;
     }
-
-    double squareRectangle(double a){
-        area=a*a;
-        return area;
-    }
-
-    double squareRectangle(){
-        a=1;
-        b=1;
-        area=a*b;
-        return area;
-    }
-
+    @Override
     void output(){
-        System.out.println("Площадь прямоугольника " + area + " кв. ед");
+        System.out.println("Площадь прямоугольника " + square() + " кв. ед");
     }
 }
