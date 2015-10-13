@@ -1,7 +1,7 @@
 package ru.stetsenko;
 
 /**
- * Created by Alesha on 06.10.2015.
+ * Демо класс, предназначенный для демонстрации класса Figure
  */
 public class Main {
     public static void main(String[] args){

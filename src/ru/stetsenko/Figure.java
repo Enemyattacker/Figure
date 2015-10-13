@@ -1,7 +1,9 @@
 package ru.stetsenko;
 
 /**
- * Created by Alesha on 06.10.2015.
+ * Абстрактный класс
+ *
+ * @author Стеценко Алексей
  */
 public abstract class Figure {
     double a;
